@@ -1,7 +1,6 @@
 CREATE TABLE IF NOT EXISTS chat
 (
-    id   BIGINT    NOT NULL,
-    userName TEXT      NOT NULL,
-    created_at   TIMESTAMP NOT NULL,
+    id   BIGINT GENERATED ALWAYS AS IDENTITY,
+    tg_chat_id BIGINT,
     PRIMARY KEY (id)
 )
